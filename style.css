@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", serif;
+}
+
+
+
+body {
+
+    background-color: #abb8e4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 30%;
+    margin:  auto;
+    padding: 20px;
+    background-color: rgb(212, 215, 233);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column; /*deixou um em baixo do outro*/
+    gap: 10px; /*afastou*/
+    margin-bottom: 20px;
+}
+
+
+input {
+    padding: 10px;
+    border: 1px solid #2140bd;
+    border-radius: 4px;
+
+}
+
+input:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+
+button {
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 210px;
+}
+
+.buttons-container{
+    display: flex;
+    gap: 10px;
+    padding-left: 23px;
+}
+
+#btn-limpar{
+    background-color: rgb(191, 34, 34);
+}
+
+#btn-limpar:hover{
+    background-color: rgb(172, 6, 6);
+}
+
+
+button:hover {
+    background-color: #004494;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #004494;
+    
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  
+}
+
+tfoot {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
