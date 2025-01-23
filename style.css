@@ -71,7 +71,7 @@ button {
 .buttons-container{
     display: flex;
     gap: 10px;
-    padding-left: 23px;
+    padding-left: 20px;
 }
 
 #btn-limpar{
