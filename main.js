@@ -3,14 +3,11 @@ const btnLimpar = document.getElementById('btn-limpar');
 const inputClick = document.getElementById('numero-contato');
 
 
-inputClick.addEventListener('input', function(e){
-    let tel = e.target.value; // resgata o valor da input (target?)
-    
-    if (tel.length == 2 ) {
-        e.target.value = '(' + tel + ')';
-    } 
-    }
-)
+$(document).ready(function() {
+    $('#numero-contato').mask('(00)00000-0000');
+});
+
+
 
 
 form.addEventListener('submit' , function(e) { //remove o comportamendo de recarregar a tela (e) evento
@@ -60,4 +57,7 @@ btnLimpar.addEventListener('click', function() {
         const linha = checkbox.closest('tr');
         linha.remove(); // Remove a linha onde a checkbox foi marcada
     });
+
+    
 });
+
